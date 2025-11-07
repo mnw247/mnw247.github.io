@@ -36,6 +36,47 @@
       color: #fff !important;
     }
 
+    .carousel {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel-inner {
+        height: 400px; /* Adjust this value based on your needs */
+    }
+
+    .carousel-item {
+        height: 100%;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        height: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: black;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
     .jumbotron {
       background: linear-gradient(to right, #007bff, #6610f2);
       color: white;
@@ -93,13 +134,11 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#carousel-2">Resume</a>
               <a class="dropdown-item" href="#carousel-2">Ruby Project</a>
+              <a class="dropdown-item" href="classicindex.html">Classic Website</a>
             </div>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="classicindex.html">Classic Website</a>
           </li>
         </ul>
       </div>
@@ -107,54 +146,58 @@
   </nav>
 </div>
 
-  <!-- Hero Section -->
-  <div class="jumbotron text-center">
-    <h1 data-aos="fade-up">Micah Wu</h1>
-    <p data-aos="fade-up" data-aos-delay="200">Full Stack Developer & Engineer</p>
-  </div>
+<!-- Hero Section -->
+<div class="jumbotron text-center">
+  <h1 data-aos="fade-up">Micah Wu</h1>
+  <p data-aos="fade-up" data-aos-delay="200">Full Stack Developer & Engineer</p>
+</div>
 
-  <!-- Carousel -->
-  <div id="carousel-1" class="carousel slide container" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-1" data-slide-to="1"></li>
-      <li data-target="#carousel-1" data-slide-to="2"></li>
-      <li data-target="#carousel-1" data-slide-to="3"></li>
-      <li data-target="#carousel-1" data-slide-to="4"></li>
-      <li data-target="#carousel-1" data-slide-to="5"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/logo2.jpg" class="d-block w-100" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src="images/p1.jpg" class="d-block w-100" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="images/p2.jpg" class="d-block w-100" alt="Slide 3">
-      </div>
-      <div class="carousel-item ">
-        <img src="images/p5.jpg">
-      </div>
-      <div class="carousel-item">
-        <img src="images/p3.jpg">
-      </div>
-      <div class="carousel-item">
-          <img src="images/p4.jpg">
-      </div>
-      <div class="carousel-item ">
-          <img src="images/logo1.jpg">
-      </div>
-      </div>
-    <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+<!-- Spacer -->
+<div class="jumbotron"></div>
+<!-- Carousel -->
+<div id="carousel-1" class="carousel slide container" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-1" data-slide-to="1"></li>
+    <li data-target="#carousel-1" data-slide-to="2"></li>
+    <li data-target="#carousel-1" data-slide-to="3"></li>
+    <li data-target="#carousel-1" data-slide-to="4"></li>
+    <li data-target="#carousel-1" data-slide-to="5"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/logo2.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="images/p1.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="images/p2.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item ">
+      <img src="images/p5.jpg" class="d-block w-100" alt="Slide 4">
+    </div>
+    <div class="carousel-item">
+      <img src="images/p3.jpg" class="d-block w-100" alt="Slide 5">
+    </div>
+    <div class="carousel-item">
+        <img src="images/p4.jpg" class="d-block w-100" alt="Slide 6">
+    </div>
+    <div class="carousel-item ">
+        <img src="images/logo1.jpg" class="d-block w-100" alt="Slide 7">
+    </div>
+    </div>
+  <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- Spacer -->
+<div class="jumbotron"></div>
 
 <!-- About -->
 <div class="jumbotron" id="about" data-aos="fade-right">
@@ -167,54 +210,54 @@
 <div id="experience" class="jumbotron" id="experience" data-aos="fade-left">
   <h1 class="text-center">Work Experience</h1>
   <hr class="my-4">
-  <ul>
+  <ul class="text-center">
       <p class="lead"><span class="font-weight-bold">Citibank - March '25 - Present</span>
           <br>Engineer Analyst (CRS - Business Monitoring)</br>
-          <li>Led modernization of Splunk governance across 500+ knowledge objects, streamlining audit workflows and eliminating redundant data.</li>
-          <li>Developed automated Splunk API pipelines, transforming manual audits into self-service models—reducing validation time from hours to minutes.</li>
-          <li>Built full-stack automation for compliance reporting, ensuring adherence to CISO data-classification standards and removing manual dependencies.</li>
-          <li>Deployed observability for Best Buy GSDT, Apigee, OSE, and PSG architectures, proactively preventing SLA breaches.</li>
-          <li>Implemented off-peak query scheduling and load analysis, reducing compute utilization costs while improving system reliability.</li>
+          <p>Led modernization of Splunk governance across 500+ knowledge objects, streamlining audit workflows and eliminating redundant data.</p>
+          <p>Developed automated Splunk API pipelines, transforming manual audits into self-service models—reducing validation time from hours to minutes.</p>
+          <p>Built full-stack automation for compliance reporting, ensuring adherence to CISO data-classification standards and removing manual dependencies.</p>
+          <p>Deployed observability for Best Buy GSDT, Apigee, OSE, and PSG architectures, proactively preventing SLA breaches.</p>
+          <p>Implemented off-peak query scheduling and load analysis, reducing compute utilization costs while improving system reliability.</p>
       </p>
       <p class="lead"><span class="font-weight-bold">Capital One - July '22 – Sep '24</span>
           <br>Full Stack Engineer - SRE for Retail Bank</br>
-          <li>Redesign Splunk data feed architecture, enhancing system stability and enabling anomaly detection pilot</li>
-          <li>Develop and implement robust backfill mechanisms, resolving critical Splunk dependencies and ensuring data integrity across systems</li>
-          <li>Lead full-stack solutions using AWS Timestream, Glue, Athena, and Kinesis, significantly enhancing digital infrastructure performance</li>
-          <li>Serve as principal consulting engineer for Zelle engagements, driving substantial improvements in system reliability and user experience</li>
-          <li>Create actionable runbooks for on-call engineers, enhancing alert response times and accuracy</li>
-          <li>Propose and prototype innovative features, driving product evolution</li>
-          <li>Mentor junior developers, fostering a culture of continuous learning and technical excellence within the team</li>            </li>
+          <p>Redesign Splunk data feed architecture, enhancing system stability and enabling anomaly detection pilot</p>
+          <p>Develop and implement robust backfill mechanisms, resolving critical Splunk dependencies and ensuring data integrity across systems</p>
+          <p>Lead full-stack solutions using AWS Timestream, Glue, Athena, and Kinesis, significantly enhancing digital infrastructure performance</p>
+          <p>Serve as principal consulting engineer for Zelle engagements, driving substantial improvements in system reliability and user experience</p>
+          <p>Create actionable runbooks for on-call engineers, enhancing alert response times and accuracy</p>
+          <p>Propose and prototype innovative features, driving product evolution</p>
+          <p>Mentor junior developers, fostering a culture of continuous learning and technical excellence within the team</p>
       </p>
       <p class="lead"><span class="font-weight-bold">Capital One - Dec '18 – July '22</span>
           <br>DevOps Engineer - Splunk Development Team for Monitoring Intelligence</br>
-          <li>Managed Splunk/ELK DevOps for 4000+ users, enhancing monitoring intelligence and AWS infrastructure.</li>
-          <li>Migrated customers from ELK to Splunk, reducing enterprise cloud costs by $10M</li>
-          <li>Modernized Splunk platform architecture, implementing Smart Store to achieve significant cost savings of $20M</li>
-          <li>Automated the onboarding process for Splunk HEC token creation and developed an internal Splunk Customer Channel Chatbot</li>
-          <li>Optimized CI/CD pipelines with Ansible and Jenkins, improving deployment for 2000+ apps</li>
-          <li>Led cross-functional collaborations, driving problem-solving and knowledge sharing</li>
-          <li>Consulted as Splunk API specialist who resolved complex issues and improving team efficiency</li>
+          <p>Managed Splunk/ELK DevOps for 4000+ users, enhancing monitoring intelligence and AWS infrastructure.</p>
+          <p>Migrated customers from ELK to Splunk, reducing enterprise cloud costs by $10M</p>
+          <p>Modernized Splunk platform architecture, implementing Smart Store to achieve significant cost savings of $20M</p>
+          <p>Automated the onboarding process for Splunk HEC token creation and developed an internal Splunk Customer Channel Chatbot</p>
+          <p>Optimized CI/CD pipelines with Ansible and Jenkins, improving deployment for 2000+ apps</p>
+          <p>Led cross-functional collaborations, driving problem-solving and knowledge sharing</p>
+          <p>Consulted as Splunk API specialist who resolved complex issues and improving team efficiency</p>
       </p>
       <p class="lead"><span class="font-weight-bold">C-Life (Non-Profit) - Apr '16 – Sep '16.</span>
           <br>Database Administration</br>
-          <li>Optimized donor/client data, boosting database efficiency by 30%</li>
-          <li>Provided comprehensive monthly analysis to support strategic decision-making on donation trends and donor behavior</li>
-          <li>Partnered with cross-functional teams to refresh dashboard UI, enhancing platform usability and donor engagement</li>
+          <p>Optimized donor/client data, boosting database efficiency by 30%</p>
+          <p>Provided comprehensive monthly analysis to support strategic decision-making on donation trends and donor behavior</p>
+          <p>Partnered with cross-functional teams to refresh dashboard UI, enhancing platform usability and donor engagement</p>
       </p>
 
       <p class="lead"><span class="font-weight-bold">Medcore Pharmacy - Apr '16 – Apr '17</span>
           <br>Executive Account Manager/Power BI Developer</br>
-          <li>Developed Power BI client web portal, boosting client tracking and tripling revenue from 1M to 3M in 3 months</li>
-          <li>Cultivated relationships with 10 client groups, coordinating 100+ sales staff to meet company objectives</li>
-          <li>Enhanced Filemaker database for better reporting efficiency, applying healthcare insurance billing expertise</li>
+          <p>Developed Power BI client web portal, boosting client tracking and tripling revenue from 1M to 3M in 3 months</p>
+          <p>Cultivated relationships with 10 client groups, coordinating 100+ sales staff to meet company objectives</p>
+          <p>Enhanced Filemaker database for better reporting efficiency, applying healthcare insurance billing expertise</p>
       </p>
 
       <p class="lead"><span class="font-weight-bold">Lockheed Martin - Jan '06 – Dec '15</span>
           <br>Systems Integration Engineer</br>
-          <li>Developed breadboarding database, saving 200 labor-hours per program, enhancing efficiency</li>
-          <li>Tested and implemented new protocols, reducing task budgets by 40%, driving cost savings</li>
-          <li>Served as Technical Lighting Vendor Coordinator for harness assembly, ensuring alignment of procurement requirements and approving vendor specifications to enhance project efficiency</li>
+          <p>Developed breadboarding database, saving 200 labor-hours per program, enhancing efficiency</p>
+          <p>Tested and implemented new protocols, reducing task budgets by 40%, driving cost savings</p>
+          <p>Served as Technical Lighting Vendor Coordinator for harness assembly, ensuring alignment of procurement requirements and approving vendor specifications to enhance project efficiency</p>
       </p>
 
       <p class="lead"><span class="font-weight-bold">National Semiconductor - Sep '05 – Jan '06</span>
@@ -297,17 +340,17 @@
 <div id="education" class="jumbotron" data-aos="fade-down">
   <h1 class="text-center">Education</h1>
   <hr class="my-4">
-  <p class="lead"><span class="font-weight-bold">University of Texas at Arlington, Arlington, TX</span>
+  <p class="text-center"><span class="font-weight-bold">University of Texas at Arlington, Arlington, TX</span>
       <br>Bachelor of Science in Electrical Engineering, May 2004</br>
   </p>
-  <p>Continued Education</p>
-  <ul>
-      <li>AWS – Solutions Architect - Associate (Nov 2022)</li>
-      <li>Coding Dojo Graduate (August 24, 2018)</li>
-      <li>AWS – Certified Developer - Associate (May 2018)</li>
-      <li>Accounting & Finance 101</li>
-      <li>Option's Trading Classes (2008)</li>
-      <li>Chartered Financial Analyst Prep Course (2010)</li>
+  <p class="text-center"><span class="font-weight-bold">Continued Education</span></p>
+  <ul class="text-center">
+      <p>AWS – Solutions Architect - Associate (Nov 2022)</p>
+      <p>Coding Dojo Graduate (August 24, 2018)</p>
+      <p>AWS – Certified Developer - Associate (May 2018)</p>
+      <p>Accounting & Finance 101</p>
+      <p>Option's Trading Classes (2008)</p>
+      <p>Chartered Financial Analyst Prep Course (2010)</p>
   </ul>
   </p>
   <hr class="my-4">
@@ -316,8 +359,8 @@
 <!-- Projects & Resume Slides -->
 <div id="carousel-2" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
-      <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-2" data-slide-to="1"></li>
+      <li data-target="#carousel-2" data-slide-to="0" class="active"></p>
+      <li data-target="#carousel-2" data-slide-to="1"></p>
   </ul>
   <div class="carousel-inner">
       <div class="carousel-item active">
